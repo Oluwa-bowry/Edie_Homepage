@@ -1,0 +1,808 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=5"/>
+    <link rel="icon" href="devchallenges.png" />
+    <link rel="shortcut icon" type="image/x-icon" href="https://devchallenges.io/"/>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap" rel="stylesheet"/>
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+    <link href='https://fonts.googleapis.com/css?family=Amaranth' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Gupter' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <title>Devchallenges</title>
+    <script>
+      function openNav() {
+        document.getElementById("myNav").style.display = "block";
+      }
+      
+      function closeNav() {
+        document.getElementById("myNav").style.display = "none";
+      }
+    </script>
+    <style>
+      body {
+        font-family: 'Amaranth';
+        overflow-y: auto;
+       
+      }
+       /* * {       
+        border: 1px solid #FAA !important;
+      }     */
+      /*section 4*/
+      .header {
+        overflow: hidden;
+        padding: 5px 10px;
+      }
+      .header a {
+        float: left;
+        color: #000000;
+        text-align: center;
+        padding: 12px;
+        text-decoration: none;
+        font-size: 18px; 
+        line-height: 25px;
+        border-radius: 4px;
+      }
+      .header .logo {
+        padding: 4px;
+        display: block;
+        float: left;
+        margin-left: 50px;
+      }
+      .header-right {
+        float: right;
+        padding-right: 20px;
+      }
+      .header a::after {
+        background-color: rgb(10, 10, 10);
+        /* color: black; */
+        margin: auto;
+        display: block;
+        width: 0%;
+        height: 2px;
+        content: '';
+        transition: 0.5s;
+      }
+      .header :hover::after {
+        width: 100%;
+      }
+      .overlay .closebtn {
+        display: none;
+      }
+      .header .openbtn {
+        display: none;
+      } 
+      article img {
+        border-radius: 10px;
+        width: 100%;        
+      }
+      article main {
+        width: 50%;
+        margin: 0 0 0 210px;
+      }
+      .content {
+        padding: 10px 20px;
+      }
+      /*section 4*/
+      input {
+        border-radius: 10px;
+        width: 50%;
+        height: 40px;
+        text-align: start;
+        padding-left: 20px;
+        border: 1px solid #959393dc;
+        background-color: #e6e6e6dc;
+        cursor: pointer;
+        display: block; 
+        margin-top: 10px;       
+      }
+      .Icon-inside {
+        position:relative;
+        margin-bottom: 10px;
+      }    
+      .Icon-inside button {
+        position:absolute;
+        left:200px;  
+        top: 3px;      
+        padding:10px 10px;
+        border-radius: 10px;
+        background-color:royalblue;
+        color: #ddd;
+        width: 70px;    
+        border: none;   
+      }
+      .info {
+        width: 40%;
+        margin-left: 210px;
+      }
+      .item_1 {
+        padding: 10px 10px;
+        border-radius: 10px;
+        background-color: #d3d3d3dc;
+        color: #3a3a3a;
+        display: block;
+        margin-top: 12px;
+        cursor: pointer;
+        border: none;
+      }
+      .icon_item {
+        border-radius: 10px;
+        background-color:royalblue;
+        padding: 4px;       
+        
+      }
+      /* .tab_1 {
+        width: 25%;
+        text-align: left;
+        padding: 20px;
+        cursor: pointer;
+       
+      } */
+      /* .tab_1 :hover {
+        /* box-shadow: 0px 0px 4px 0.5px #b6b6b6;
+        background-color: rgb(255, 255, 255); 
+        border: 2px solid rgb(230, 156, 19); 
+        border-radius: 20px; 
+      } */
+      aside {
+        display: flex;
+        column-gap: 40px; 
+        justify-content: center;
+      }
+      .tab_1 {
+        flex-basis: 30%;
+        box-sizing: border-box;
+        transition: 0.5s;
+        padding: 20px;
+        cursor: pointer;
+      }
+      .tab_1:hover {
+        box-shadow: 0px 0px 4px 0.5px #999696;
+        background-color: rgb(255, 255, 255); 
+        border: 1px; 
+        border-radius: 20px;
+      }
+       /*section 4*/
+      .section_4{
+        margin: 60px 100px;
+      }
+      h1 {
+        letter-spacing: 2px;
+        font-size: 40px;
+      }
+      /*section 5*/
+      .section_5 {
+        margin: 20px 90px;
+      }
+      .section_5 a {
+        float: right;
+      }
+      .row1 {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-auto-rows: minmax(10px, auto);
+        align-items: center;
+      }
+      .img1{
+        width: 500px;
+        height: 300px;
+        border-radius: 15px;        
+        margin: 0 8px 15px 8px;
+      }
+      .row1 > * {
+        /* background-color: violet; */
+        margin: 5px;          
+      }
+      .fig1 {
+        grid-row: 2/4;
+        justify-self: center;
+      }
+      .fig2 {
+        grid-row: 1/3;
+        justify-self: center;
+      }
+      .fig3 {
+        grid-row:  6/9;
+        justify-self: center;
+      }
+      .fig4 {
+        grid-row: 5/8;
+        justify-self: center;
+      }
+      .img1 img{
+        width: 100%;
+        height: 100%;      
+        border-radius: 15px;
+        object-fit: fill;  
+      }
+      .row1 figcaption {
+        margin: 0 8px;
+      }
+
+      #gallery {
+        display: grid;
+        margin: 0 0 0 10px;
+        padding: 3% 0;
+        grid-template-columns: repeat(2, 1fr);
+        grid-auto-rows: minmax(100px, auto);
+        
+      }
+      #gallery > *{
+        /* padding: 30px; */
+          margin: 5px 0px 5px 5px;
+        border-radius: 15px;
+        /* background-color: violet; */
+
+      }
+     
+      #gallery_1 {
+        grid-row: 2/5;
+        width: 300px;
+        height: 300px;
+        justify-self: end;
+        align-self: flex-end;
+      }
+      #gallery_2 {
+        grid-row: 1/3;
+        width: 280px;
+        height: 300px;
+        justify-self: start;
+        align-self: flex-start;
+        
+      }
+      #gallery_2 img {
+        object-fit: contain;
+      } 
+     
+      #gallery_3 {
+        grid-column: 2/2;
+        grid-row: 3/6;
+        width: 300px;
+        height: 300px;
+        justify-self: start;
+        align-self: flex-start;
+      }
+      .section_6{
+        margin: 80px 70px;
+      }
+      .row-left {
+        float: left;
+        padding-top: 20px;
+        /* text-align: center; */
+        
+      }
+      .row-left > * {
+        width: 200px;
+        
+      }
+      /* section_7 */
+      .section_7 {
+        margin: 80px 70px;
+      }
+      #sec7text {
+        width: 850px;
+        font-size: 40px;
+        margin-bottom: 30px;
+      }
+      .Img4 {
+        width: 8%;
+        margin-right: 20px;
+        height: 80px;
+      }
+      /*last section*/
+      footer {
+        background-color: #100E1D;
+        color: white;
+        width: 100%;
+        height: 385px;
+        margin-bottom: 0%;
+        
+        padding: 20px 50px 0px 50px;
+      }
+      .sec8 a {
+        display: block;
+        color: white;
+        text-decoration: none;
+        text-align: center;
+      }
+      .sec9 {
+        text-align: left;
+      }
+      .sec9 h2 {
+        padding-left: 30px;
+      }
+      .sec9 aside {
+        float: left;
+      }
+      .sec9 a{
+        width: 24px;
+        height: 24px;
+      }
+      .sec10 {
+        padding-left: 160px;
+      }
+      .sec11 {
+        display: block;
+        font-size: 70%;
+        text-align: center;
+        margin-bottom: 0%;
+      }
+      @media screen and (max-width: 720px) {
+        .header a {
+          float: none;
+          display: block;
+          text-align: center;
+          color: #ddd;
+          padding: 8px;
+        } 
+        .content {
+          padding: 10px 0px;
+        }     
+       
+        .header .openbtn {
+          font-size: 40px;
+          margin-top: 15px;
+          right: 35px;
+          float: right;
+          display: block;
+          cursor: pointer;
+        }
+        .overlay .closebtn {
+          position: absolute;
+          top: 15px;
+          right: 35px;
+          font-size: 45px;
+          display: block;
+          cursor: pointer;
+        }
+        .header .logo {
+          padding: 4px;
+          border: 2px solid rgb(255, 255, 255);
+          float: left;  
+          margin-left: 0px;        
+        }
+        .header a::after {
+          background: #000000;
+          color: black; 
+          margin: auto;
+          display: block;
+          width: 0%;
+          height: 2px;
+          content: '';
+          transition: 0.5s;
+          text-decoration: none;
+        }
+        .header :hover::after {
+          width: 23%;
+        }        
+        .overlay {
+          height: 100%;
+          width: 100%;
+          display: none;
+          position: fixed;
+          z-index: 1;
+          top: 0;
+          padding-top: 100px;
+          padding-left: 0px;
+          left: 0;
+          background-color: rgb(255, 255, 255);        
+          /* background-color: rgba(0,0,0, 0.9); */
+          overflow-x: hidden;
+          /* transition: 0.5s;            */
+        }
+        .overlay a {
+          position:relative;
+          padding-top: 20px;
+          width: 100%;
+          text-align: center;
+          color: #000000;
+          margin-top: 15px;
+        }
+        .overlay .menu{
+          padding: 200px 50px 10px 150px;
+        }
+        article img {
+          border-radius: 10px;
+          width: 98%;
+          height: 100px;
+        }
+        article main {
+          width: 80%;
+          margin: 0 0 0 30px;
+        }
+        h1 {
+          letter-spacing: 2px;
+        }
+        .info {
+          width: 80%;
+          margin-left: 30px;
+        }
+        .Icon-inside button {
+          position:absolute;
+          left: 140px;
+          top: 3px;      
+          padding:5px 5px;
+          border-radius: 10px;
+          background-color:royalblue;
+          color: #ddd;
+          width: 70px;     
+          border: none;  
+        }
+        input {
+          border-radius: 10px;
+          width: 95%;
+          height: 40px;
+          text-align: start;
+          padding-left: 20px;
+          border: 1px solid #959393dc;
+          background-color: #e6e6e6dc;
+          cursor: pointer;
+          display: block; 
+          margin-top: 10px;       
+        }
+        .section_4{
+          
+          margin: 80px 5px;
+        }
+        aside {
+          display: block;
+        }
+        .tab_1 {
+          width: fit-content;
+          text-align: left;
+          padding: 20px;
+          margin: 5px;        
+          
+        }
+         /*section 5*/
+        .section_5 {
+          margin: 20px 5px;
+        }
+        .section_5 a {
+          float: left;
+        }
+       
+        .row1 {
+          display: grid;
+          grid-template-columns: repeat(1, 1fr);
+          grid-auto-rows: minmax(150px, auto);
+          align-items: center;
+          grid-row: 15px;
+          margin: 0%;
+          padding: 0%;
+        }
+        .fig1 {
+          grid-row: 1;
+          margin: 0%;
+          padding: 0%;
+          
+        }
+        .fig2 {
+          grid-row: 2;
+        }
+        .fig3 {
+          grid-row: 3;
+        }
+        .fig4 {
+          grid-row: 4;
+        }
+        .img1{
+          width: 99%;
+          height: 250px;
+          border-radius: 15px;        
+          margin: 0 0px 15px 0px;
+        }
+        .row1 > * {
+          /* background-color: violet; */
+          margin: 0px;      
+          padding: 0%;    
+        }
+        .row1 figure {
+          margin: 0 0px;
+          padding: 0%;
+        }
+          /*section 5*/
+        .section_6 {
+          margin: 40px 0px;
+        }
+        #gallery {
+          width: 100%;
+        }
+        #gallery {
+          display: grid;
+          margin: 0;
+          padding: 0;
+          grid-template-columns: repeat(2, 1fr);
+          grid-auto-rows: minmax(70px, auto);
+          
+        }
+        #gallery > *{
+          /* padding: 30px; */
+            margin: 5px 0px 5px 5px;
+          border-radius: 15px;
+          /* background-color: violet; */
+
+        }
+      
+        #gallery_1 {
+          grid-row: 2/4;
+          width: 140px;
+          height: 140px;
+          justify-self: end;
+          align-self: flex-end;
+        }
+        #gallery_2 {
+          grid-row: 1/3;
+          width: 120px;
+          height: 140px;
+          justify-self: start;
+          align-self: flex-start;
+          
+        }
+        #gallery_2 img {
+          object-fit: contain;
+        } 
+      
+        #gallery_3 {
+          grid-column: 2/2;
+          grid-row: 3/5;
+          width: 140px;
+          height: 140px;
+          justify-self: start;
+          align-self: flex-start;
+        }
+       
+        .row-left {
+          float: left;
+          padding-top: 20px;
+          /* text-align: center; */
+          
+        }
+         /* section_7 */
+        .section_7 {
+          margin: 40px 0px;
+        }
+        #sec7text {
+          width: 850px;
+          font-size: 23px;
+          margin-bottom: 30px;
+          letter-spacing: 1px;
+        }
+        .Img4 {
+          width: 25%;
+          margin-right: 20px;
+          height: 70px;
+        }
+         /*last section*/
+        footer {
+          background-color: #100E1D;
+          color: white;
+          width: 100%;
+          height: 420px;
+          margin-bottom: 0%;          
+          padding: 20px 50px 0px 50px;
+        }
+        
+        .sec8 a {
+          display: block;
+          color: white;
+          text-decoration: none;
+          text-align: left;
+          
+        }
+        .sec9 {
+          text-align: left;
+          margin-top: 20px;
+        }
+        .sec9 h2 {
+          padding-left: 0px;
+        }
+        .sec9 aside {
+          float: left;
+          padding-left: 0%;
+        }
+        .sec9 a{
+          width: 24px;
+          height: 24px;
+        }
+        .sec10 {
+          margin-top: 20px;
+          padding-left: 10px;
+        }
+        .sec11 {
+          display: block;
+          font-size: 70%;
+          text-align: center;
+          margin-bottom: 0%;
+          margin-top: 55px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="content">
+       <!--SECTION 1 -->
+      <header class="header">
+        <h2 href="#default" class="logo">Edie</h2>      
+        <span style="font-size:30px;cursor:pointer" class="openbtn" onclick="openNav()">&#9776;</span> 
+        <div class="header-right overlay" id="myNav">        
+          <span href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</span>  
+          <a class="active" href="#home">Home</a>
+          <a href="#collection">Services</a>
+          <a href="#about">Our Works</a>
+          <a href="#about">Clients</a>
+          <a href="#contact">Contact</a>                      
+        </div>      
+      </header>
+       <!--SECTION 2 -->
+      <article>
+        <main>
+          <a>Unhappy with our website?</a>
+          <h1>We create beautiful <br> and fast web services</h1>
+        </main>     
+        <img src="./heroImage.jpg" >
+      </article>
+       <!--SECTION 3 -->
+      <section class="info">
+        <h1>Story, emotion <br> and purpose</h1>
+        <p>We help transform your ideas into real<br> world applications that
+          will outperform<br> your toughest competition and help you<br> achieve 
+          your strategic goals in short <br> period of time.
+        </p>
+       
+        <small>Want us to contact you?</small>
+        <div class="Icon-inside">
+          <button>Join</button>
+          <input type="email" placeholder="Email">              
+        </div>        
+      </section>
+
+       <!--SECTION 4 -->
+      <div class="section_4">
+        <h2>We offer high <br> demand services</h2>
+        <aside>
+          <article class="tab_1">
+            <i class="material-icons icon_item" style="font-size:36px; ">code</i>
+            <h4 ><strong>UI/UX Design</strong></h4>
+            <code>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis a metus ac nulla consequat aliquet id quis turpis.</code>
+            <button class="item_1">Get started</button>
+          </article>
+          <article class="tab_1">
+            <i class="material-icons icon_item" style="font-size:36px; ">code</i>
+            <h4 ><strong>UI/UX Design</strong></h4>
+            <code>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis a metus ac nulla consequat aliquet id quis turpis.</code>
+            <button class="item_1">Get started</button>
+          </article>
+          <article class="tab_1">
+            <i class="material-icons icon_item" style="font-size:36px; ">code</i>
+            <h4 ><strong>UI/UX Design</strong></h4>
+            <code>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis a metus ac nulla consequat aliquet id quis turpis.</code>
+            <button class="item_1">Get started</button>
+          </article>
+        </aside>
+      </div>
+
+
+       <!--SECTION 5 -->
+      <section class="section_5">
+        <h2>Good Design means <br> good business</h2>
+
+        <div class="row1">
+          <figure class="fig1">
+            <main class="img1">
+              <img src="smarthome.jpg">
+            </main>
+            <!-- -->
+            <figcaption>
+              <code >UX/UI design</code>
+              <h5 style="margin-bottom: 0%;margin-top: 5px;">Onboard applicaion</h5>
+            </figcaption>
+          </figure>
+          <figure class="fig2">
+            <main class="img1">
+              <img src="onboard.png">
+            </main>
+            <!--  -->
+            <figcaption>
+              <code >UX/UI design</code>
+              <h5 style="margin-bottom: 0%;margin-top: 5px;">Onboard applicaion</h5>
+            </figcaption>
+          </figure>
+          <figure class="fig3">
+            <main class="img1">
+              <img src="booking.png">
+            </main>
+            <!--  -->
+            <figcaption style="margin-bottom: 0%;">
+              <code >UX/UI design</code>
+              <h5 style="margin-bottom: 0%;margin-top: 5px;">Onboard applicaion</h5>
+            </figcaption>
+          </figure>
+          <figure class="fig4">
+            <main class="img1">
+              <img src="juice-product.png">
+            </main>
+            <!--  -->
+            <figcaption >
+              <code >UX/UI design</code>
+              <h5 style="margin-bottom: 0%;margin-top: 5px;">Onboard applicaion</h5>
+            </figcaption>
+          </figure>
+        </div>
+
+        <a>See more<i class="fa fa-long-arrow-right" style="font-size:20px; margin-left: 10px;margin-top: 5px;"></i></i></a>
+      </section>
+
+      <section class="row section_6">
+        <div class="col-sm-4 row-left">
+          <a style="margin-bottom: 10px;">Meet the team</a>
+          <h3 style="margin-bottom: 10px;margin-top: 10px;">We are a chilled and a laidback team</h3>
+          <small>Lorem ipsum dolor sit amet, <br> consectetur adipiscing elit.</small>
+        </div>
+        <div class="col-sm-8">
+          <figure id="gallery">
+            <main id="gallery_1"  >1
+              <!-- <img src ="person3.png">  -->
+            </main>
+            <main id="gallery_2" >2
+              <!-- <img src="person1.png" style="object-fit: center;">  -->
+            </main>
+            <main id="gallery_3">3
+              <!-- <img src="person2.png"> -->
+            </main>
+          </figure>
+
+        </div>
+      </section>
+
+      <section class="row section_7">
+        <h3 id="sec7text">"Fast and oustanding results. Edie understands their customer's needs. They have a young and talented team."</h3>
+        <article style="display: flex;">
+          <img class="Img4" src="person4.png" >
+          <figcaption style="height: 70px;">
+            <h5 style="margin-bottom: 20px;">Carlos Tran</h5>
+            <small>The Decorate Gatsby</small>
+          </figcaption>
+        </article>
+      </section>
+
+    </div>
+   
+    <footer>
+      <div class="row" style="height: 300px;">
+        <div class="col-sm-3 sec8" >
+          <a href="#home">Home</a>
+          <a href="#services">Services</a>
+          <a href="#about">Our Works</a>
+          <a href="#about">Clients</a>
+          <a href="#contact">Contact</a>    
+        </div>
+        <div class="col-sm-3 sec9">
+          <h2 href="#default" class="logo">Edie</h2>
+          <aside style="display: flex; margin: 0 35px; column-gap: 10px;">
+            <span><img src="instagram.svg"></span>
+            <span><img src="linkedin.svg"></span>
+            <span><img src="twitter.svg"></span>
+          </aside>
+        </div>
+        <div class="col-sm-6 sec10">
+          <small>Want us to contact you?</small>
+          <div class="Icon-inside">
+            <button>Join</button>
+            <input type="email" placeholder="Email">              
+          </div>   
+        </div>
+      </div>
+      
+      <div class="sec11" style="display: block;">
+        <p>created by <strong>Oluwabori</strong>> - devchallenges.io</p>
+      </div>
+    </footer>
+  </body>
+</html>
