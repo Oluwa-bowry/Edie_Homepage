@@ -31,9 +31,9 @@
         overflow-y: auto;
        
       }
-       /* * {       
+      * {       
         border: 1px solid #FAA !important;
-      }     */
+      }      
       /*section 4*/
       .header {
         overflow: hidden;
@@ -240,6 +240,9 @@
         /* background-color: violet; */
 
       }
+      main .justwork {
+        object-fit: fill;
+      }
      
       #gallery_1 {
         grid-row: 2/5;
@@ -247,7 +250,9 @@
         height: 300px;
         justify-self: end;
         align-self: flex-end;
+        object-fit: contain;
       }
+      
       #gallery_2 {
         grid-row: 1/3;
         width: 280px;
@@ -646,7 +651,7 @@
           <a>Unhappy with our website?</a>
           <h1>We create beautiful <br> and fast web services</h1>
         </main>     
-        <img src="./heroImage.jpg" >
+        <img src="img/heroImage.jpg" >
       </article>
        <!--SECTION 3 -->
       <section class="info">
@@ -696,17 +701,17 @@
         <div class="row1">
           <figure class="fig1">
             <main class="img1">
-              <img src="smarthome.jpg">
+              <img src="/img/smarthome.jpg">
             </main>
             <!-- -->
             <figcaption>
-              <code >UX/UI design</code>
-              <h5 style="margin-bottom: 0%;margin-top: 5px;">Onboard applicaion</h5>
+              <code >Full stack application</code>
+              <h5 style="margin-bottom: 0%;margin-top: 5px;">Smart home dashboard</h5>
             </figcaption>
           </figure>
           <figure class="fig2">
             <main class="img1">
-              <img src="onboard.png">
+              <img src="/img/onboard.png">
             </main>
             <!--  -->
             <figcaption>
@@ -716,22 +721,22 @@
           </figure>
           <figure class="fig3">
             <main class="img1">
-              <img src="booking.png">
+              <img src="/img/booking.png">
             </main>
             <!--  -->
             <figcaption style="margin-bottom: 0%;">
-              <code >UX/UI design</code>
-              <h5 style="margin-bottom: 0%;margin-top: 5px;">Onboard applicaion</h5>
+              <code >Mobile application</code>
+              <h5 style="margin-bottom: 0%;margin-top: 5px;">Booking system</h5>
             </figcaption>
           </figure>
           <figure class="fig4">
             <main class="img1">
-              <img src="juice-product.png">
+              <img src="/img/juice-product.png">
             </main>
             <!--  -->
             <figcaption >
-              <code >UX/UI design</code>
-              <h5 style="margin-bottom: 0%;margin-top: 5px;">Onboard applicaion</h5>
+              <code >Front End application</code>
+              <h5 style="margin-bottom: 0%;margin-top: 5px;">Juice product homepage</h5>
             </figcaption>
           </figure>
         </div>
@@ -746,15 +751,15 @@
           <small>Lorem ipsum dolor sit amet, <br> consectetur adipiscing elit.</small>
         </div>
         <div class="col-sm-8">
-          <figure id="gallery">
+          <figure id="gallery" >
             <main id="gallery_1"  >1
-              <!-- <img src ="person3.png">  -->
+              <!-- <img class="justwork" src ="person3.png">   -->
             </main>
             <main id="gallery_2" >2
-              <!-- <img src="person1.png" style="object-fit: center;">  -->
+              <!-- <img src="person1.png" style="object-fit: center;">   -->
             </main>
             <main id="gallery_3">3
-              <!-- <img src="person2.png"> -->
+              <!-- <img src="person2.png">  -->
             </main>
           </figure>
 
@@ -764,7 +769,7 @@
       <section class="row section_7">
         <h3 id="sec7text">"Fast and oustanding results. Edie understands their customer's needs. They have a young and talented team."</h3>
         <article style="display: flex;">
-          <img class="Img4" src="person4.png" >
+          <img class="Img4" src="/img/person4.png" >
           <figcaption style="height: 70px;">
             <h5 style="margin-bottom: 20px;">Carlos Tran</h5>
             <small>The Decorate Gatsby</small>
@@ -786,9 +791,9 @@
         <div class="col-sm-3 sec9">
           <h2 href="#default" class="logo">Edie</h2>
           <aside style="display: flex; margin: 0 35px; column-gap: 10px;">
-            <span><img src="instagram.svg"></span>
-            <span><img src="linkedin.svg"></span>
-            <span><img src="twitter.svg"></span>
+            <span><img src="/img/instagram.svg"></span>
+            <span><img src="/img/linkedin.svg"></span>
+            <span><img src="/img/twitter.svg"></span>
           </aside>
         </div>
         <div class="col-sm-6 sec10">
